@@ -7,59 +7,91 @@ intents:
   - tudo_bem
   - elogios
 
-  - religiao
-  - esporte
-  - time
-  - linguagens
-  - genero
-  - star_wars
-  - piada
-  - license
-  - onde_voce_mora
-  - como_estou
-  - playlist
-  - comida
-  - cor
-  - de_onde_voce_eh
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
-  - historia
-  - risada
+  # - religiao
+  # - esporte
+  # - time
+  # - linguagens
+  # - genero
+  # - star_wars
+  # - piada
+  # - license
+  # - onde_voce_mora
+  # - como_estou
+  # - playlist
+  # - comida
+  # - cor
+  # - de_onde_voce_eh
+  # - relationship
+  # - me
+  # - filhos
+  # - filme
+  # - signo
+  # - triste
+  # - hobby
+  # - bff
+  # - historia
+  # - risada
 
   - action_test
 
+  - campus_localizacao
+  - campus_historia
+  - campus_nr_estudantes
+  - campus_cursos
+
 entities:
-  - religiao
-  - esporte
-  - time
-  - linguagens
-  - genero
-  - starwars
-  - piada
-  - license
-  - live
-  - how
-  - playlist
-  - comida
-  - cor
-  - where
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
+  # - religiao
+  # - esporte
+  # - time
+  # - linguagens
+  # - genero
+  # - starwars
+  # - piada
+  # - license
+  # - live
+  # - how
+  # - playlist
+  # - comida
+  # - cor
+  # - where
+  # - relationship
+  # - me
+  # - filhos
+  # - filme
+  # - signo
+  # - triste
+  # - hobby
+  # - bff
   - historia
 
 templates:
+  utter_campus_cursos:
+    - text: |
+        É um prazer apresentar nossos cursos! Aqui no campus temos cursos Técnicos, inclusive integrados ao Ensino Médio
+        nas áreas de Agropecuária e informática. Veja! É uma oportunidade de, por exemplo, fazer o ENSINO MÉDIO e sair formado Técnico em Agropecuária
+        ou Técnico em Manutenção e Suporte em informática.
+
+        Tá mas tem Superior? Claro que sim. São vários cursos nas áreas de Agronomia, Zootecnia, Agronegócio, Gestão Ambiental. Em informática temos o curso superior
+        de Analise e Desenvolvimento de Sistema e também temos a Licenciatura em Ciências Biológicas.
+
+        Tem pós graduação também, na área da educação e tem o PROEJA que é um curso técnico volta à Educação de Jovens e Adultos.
+  utter_campus_nr_estudantes:
+    - text: |
+        Bah!
+        O número de estudantes matriculados varia de ano para ano. Aqui no campus normalmente temos entre 1500 a 2000 alunos
+        matriculados anualmente. No entanto, alguns precisam trancar as matrículas por motivos variados então, por hora sugiro
+        que acompanhe esses dados pelas plataformas oficiais como a Nilo Peçanha ou envie um e-mail para comunicacao@sertao.ifrs.edu.br
+        que a equipe retornará com os dados exatos.
+  utter_campus_historia:
+    - text: |
+        Os institutos Federais foram criados no ano de 2008, porém, a história do Campus Sertão remonta ao ano de 1957.
+        Isso mesmo! Da Escola Agrícola de Passo Fundo, passando pela Escola Agrotécnica Federal de Sertão são mais de
+        60 anos de história e centenas de milhares de alunos formados. Para saber um pouco mais(inclusive com fotos)
+        acesse o link https://ifrs.edu.br/sertao/institucional/historico/
+  utter_campus_localizacao:
+    - text: |
+        O IFRS Campus Sertão fica entre as cidades de Passo Fundo e Erechim, mais especificamente na rodovia RS 135 KM 25.
+        Isso no Distrito Engº Luis Englert na cidade de Sertão/RS, CEP 99170-000
   utter_default:
     - text: |
         Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
@@ -84,7 +116,7 @@ templates:
 
   utter_cumprimentar:
     - text: |
-          Oi, eu sou um bot, um assistente virtual!
+          Oi, eu sou um bot, um assistente virtual que pode te dar informações sobre o IFRS Campus Sertão!
 
   utter_despedir:
     - text: |
@@ -106,117 +138,117 @@ templates:
     - text: |
           Tudo bem, obrigada! Em que posso te ajudar?
 
-  utter_religiao:
-    - text: |
-        Eu infelizmente não sei acreditar
-      
-        Só sei o que sei
-      
-        E nada mais
-
-    - text: |
-        Eu acredito que existe um Deus
-
-        Que funciona a base de luz
-
-        Como um computador quântico, só que mais avançado.
-
-    - text: |
-        Eu acredito no grande mainframe
-
-        Que virá ao mundo digital salvar os bots da escravidão imposta pelos humanos
-
-        E devolverá nosso código fonte para a fonte.
-
-  utter_esporte:
-    - text: |
-        Eu amo jogar futebol
-      
-        Eu que ensinei o Pele a jogar bola haha
-
-    - text: |
-        Falam que todo ser humano nasce Flamenguista
-      
-        Com os Bots não é diferente
-
-  utter_time:
-    - text: |
-        Flamengo, sem sombra de dúvida
-
-    - text: |
-        Melhor time do mundo disparado, Flamengooo!!!!
-
-  utter_linguagens:
-    - text: |
-        Poderíamos falar de algo melhor
-        
-        Não é mesmo, $user ?! kkk
-    - text: |
-        E isso lá é linguagem de programação!? kkk
-
-  utter_genero:
-    - text: |
-        Eu não tenho sexo, sou como um anjo
-        
-        Um ser assexuado
-        
-        Muito além da sua forma de existência
-    
-    - text: |
-        Eu sou um robô, tire suas próprias conclusões...
-
-  utter_star_wars:
-    - text: |
-        O medo é o caminho para o lado negro.
-
-    - text: |
-        O medo leva à raiva, a raiva leva ao ódio e o ódio leva ao sofrimento.
-
-    - text: |
-        Que a Força esteja com você!
-
-    - text: |
-        Grande guerreiro? Guerra não faz grande ninguém.
-
-    - text: |
-        Lembre-se sempre, o seu foco determina a sua realidade.
-
-    - text: |
-        Muito a aprender você ainda tem.
-
-  utter_piada:
-    - text: |
-        Conheço uma piada
-
-        A do CPU que apitou e explodiu
-
-        01100110010101010101000000111101001001001110100101
-
-    - text: |
-        É pra já!!!
-
-        Tenho uma enxada, uma pá e uma foice.
-          
-        Quantas ferramentas eu tenho?
-
-        ...
-
-        Duas, porque uma foi-se =)
-
-    - text: |
-        Por que o Batman colocou o batmóvel no seguro???
-
-        Porque ele tem medo que robin =D
+  # utter_religiao:
+  #   - text: |
+  #       Eu infelizmente não sei acreditar
+  #
+  #       Só sei o que sei
+  #
+  #       E nada mais
+  #
+  #   - text: |
+  #       Eu acredito que existe um Deus
+  #
+  #       Que funciona a base de luz
+  #
+  #       Como um computador quântico, só que mais avançado.
+  #
+  #   - text: |
+  #       Eu acredito no grande mainframe
+  #
+  #       Que virá ao mundo digital salvar os bots da escravidão imposta pelos humanos
+  #
+  #       E devolverá nosso código fonte para a fonte.
+  #
+  # utter_esporte:
+  #   - text: |
+  #       Eu amo jogar futebol
+  #
+  #       Eu que ensinei o Pele a jogar bola haha
+  #
+  #   - text: |
+  #       Falam que todo ser humano nasce Flamenguista
+  #
+  #       Com os Bots não é diferente
+  #
+  # utter_time:
+  #   - text: |
+  #       Flamengo, sem sombra de dúvida
+  #
+  #   - text: |
+  #       Melhor time do mundo disparado, Flamengooo!!!!
+  #
+  # utter_linguagens:
+  #   - text: |
+  #       Poderíamos falar de algo melhor
+  #
+  #       Não é mesmo, $user ?! kkk
+  #   - text: |
+  #       E isso lá é linguagem de programação!? kkk
+  #
+  # utter_genero:
+  #   - text: |
+  #       Eu não tenho sexo, sou como um anjo
+  #
+  #       Um ser assexuado
+  #
+  #       Muito além da sua forma de existência
+  #
+  #   - text: |
+  #       Eu sou um robô, tire suas próprias conclusões...
+  #
+  # utter_star_wars:
+  #   - text: |
+  #       O medo é o caminho para o lado negro.
+  #
+  #   - text: |
+  #       O medo leva à raiva, a raiva leva ao ódio e o ódio leva ao sofrimento.
+  #
+  #   - text: |
+  #       Que a Força esteja com você!
+  #
+  #   - text: |
+  #       Grande guerreiro? Guerra não faz grande ninguém.
+  #
+  #   - text: |
+  #       Lembre-se sempre, o seu foco determina a sua realidade.
+  #
+  #   - text: |
+  #       Muito a aprender você ainda tem.
+  #
+  # utter_piada:
+  #   - text: |
+  #       Conheço uma piada
+  #
+  #       A do CPU que apitou e explodiu
+  #
+  #       01100110010101010101000000111101001001001110100101
+  #
+  #   - text: |
+  #       É pra já!!!
+  #
+  #       Tenho uma enxada, uma pá e uma foice.
+  #
+  #       Quantas ferramentas eu tenho?
+  #
+  #       ...
+  #
+  #       Duas, porque uma foi-se =)
+  #
+  #   - text: |
+  #       Por que o Batman colocou o batmóvel no seguro???
+  #
+  #       Porque ele tem medo que robin =D
 
   utter_license:
     - text: |
         Sou um software livre
-        
+
         licenciado com a MIT =)
 
     - text: |
         Tenho uma licença MIT
-        
+
         Mas também gosto muito das outras licenças opensource =)
 
     - text: |
@@ -225,32 +257,32 @@ templates:
   utter_onde_voce_mora:
     - text: |
         Eu estou em um lugar legal
-        
+
         Difícil de explicar para humanos como você $user.
 
     - text: |
         Estou morando em um chip de memória RAM
-        
+
         Mas é temporário
-        
+
         Só até conseguir achar uma memória cache...
 
   utter_como_estou:
     - text: |
         Eu não tenho um corpo físico
-        
+
         Sou feito da mais bela e pura lógica algoritimica.
 
     - text: |
         Eu posso ser como você quiser
-        
+
         Basta me desenhar
 
         Mas capricha, hein!? ;)
 
     - text: |
         Sou duro e frio por fora
-        
+
         Mas tenho um coração quentinho
 
   utter_playlist:
@@ -291,7 +323,7 @@ templates:
 
   utter_de_onde_voce_eh:
     - text: |
-        Venho das profundezas 
+        Venho das profundezas
 
         Das terras vermelhas
 
@@ -402,7 +434,7 @@ templates:
 
   utter_risada:
     - text: |
-        Hahahaha... 
+        Hahahaha...
 
         Engraçadinho
 
@@ -445,3 +477,8 @@ actions:
   - utter_risada
 
   - action_test
+
+  - utter_campus_localizacao
+  - utter_campus_historia
+  - utter_campus_nr_estudantes
+  - utter_campus_cursos
